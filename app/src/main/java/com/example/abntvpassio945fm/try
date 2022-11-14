@@ -1,0 +1,20 @@
+override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):onboardingItemViewHolder {
+        return onboardingItemViewHolder(
+            LayoutInflater.from(parent.context).inflate(
+                R.layout.onboardingitem,
+                parent,
+                false
+            )
+        )
+    }
+    override fun onBindViewHolder(holder: onboardingItemViewHolder , position: Int) {
+        holder.bind(onboardingItems[position])
+
+    }
+
+
+
+    override fun getItemCount(): Int {
+        return onboardingItems.size
+    }
+

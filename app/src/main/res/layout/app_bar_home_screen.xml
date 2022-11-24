@@ -16,20 +16,23 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="#FF5722"
             app:popupTheme="@style/Theme.ABNTvPassio945Fm.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_home_screen" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomview"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        app:elevation="12dp"
+        android:background="@color/white"
+        app:itemTextColor="@color/purple_700"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottommenu" />
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

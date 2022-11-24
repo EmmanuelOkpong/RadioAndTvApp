@@ -5,16 +5,29 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/radioFragment"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:title="Listen to Live Radio" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/TVFragment"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Watch ABN TV Live" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/programScheduleFragment"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Weekly Program Schedule" />
+        <item
+            android:id="@+id/advertiseWithUsFragment"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Advertise With Us" />
+        <item
+            android:id="@+id/connectWithOAPFragment"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Connect With Our OAP" />
+        <item
+            android:id="@+id/sendYourReportsFragment"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Send in your Report" />
+
     </group>
 </menu>

@@ -11,4 +11,9 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-</resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="AboutRadio">Passion Radio94.5FM is a private radio in Akwa Ibom State,South South Nigeria. It is owned and operated by Advocate Broadcasting Network Ltd.  The Company was awarded license by the Federal Government in 2014 for operation of Frequency Modulation band and assigned the frequency 94.5 MHZ  following the registration of 94.5 Passion FM as a trade Mark.
+</string>
+
+    </resources>

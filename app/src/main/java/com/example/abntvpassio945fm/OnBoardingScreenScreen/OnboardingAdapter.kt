@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.abntvpassio945fm.OnBoardingScreenScreen.OnboardingItem
 
 class OnboardingItemsAdapter(private val onboardingItems: List<OnboardingItem>):
 RecyclerView.Adapter<OnboardingItemsAdapter.onboardingItemViewHolder>(){
@@ -14,7 +15,7 @@ RecyclerView.Adapter<OnboardingItemsAdapter.onboardingItemViewHolder>(){
         private val imageOnboarding= view.findViewById<ImageView>(R.id.imageOnboarding)
         private val textOnboarding= view.findViewById<TextView>(R.id.OnBoardText)
 
-   fun bind(onboardingItem:OnboardingItem){
+   fun bind(onboardingItem: OnboardingItem){
        imageOnboarding.setImageResource(onboardingItem.onboardingIamge)
        textOnboarding.text=onboardingItem.onboardingText
     }

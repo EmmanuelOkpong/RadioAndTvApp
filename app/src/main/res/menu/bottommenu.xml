@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/radioFragment"
+            android:icon="@drawable/radioicon"
+            android:title="Listen to Live Radio" />
+        <item
+            android:id="@+id/TVFragment"
+            android:icon="@drawable/tvicon"
+            android:title="ABN Tv Live" />
+
+
+</menu>

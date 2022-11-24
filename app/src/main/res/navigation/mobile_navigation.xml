@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/radioFragment">
 
     <fragment
         android:id="@+id/nav_home"
@@ -11,15 +11,60 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.abntvpassio945fm.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.abntvpassio945fm.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/radioFragment"
+        android:name="com.example.abntvpassio945fm.ui.LiveRadio.RadioFragment"
+        android:label="Passion94.5FM LIive"
+        tools:layout="@layout/fragment_radio" />
+    <fragment
+        android:id="@+id/TVFragment"
+        android:name="com.example.abntvpassio945fm.ui.LiveTV.TVFragment"
+        android:label="ABN TV Live"
+        tools:layout="@layout/fragment_t_v" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.abntvpassio945fm.ui.AboutUs.AboutUsFragment"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/advertiseWithUsFragment"
+        android:name="com.example.abntvpassio945fm.ui.AdvertiseWithUs.AdvertiseWithUsFragment"
+        android:label="Advertise"
+        tools:layout="@layout/fragment_advertise_with_us" />
+    <fragment
+        android:id="@+id/connectWithOAPFragment"
+        android:name="com.example.abntvpassio945fm.ui.ConnectWithOAP.ConnectWithOAPFragment"
+        android:label="Connect With OAP"
+        tools:layout="@layout/fragment_connect_with_o_a" />
+    <fragment
+        android:id="@+id/contactUsFragment"
+        android:name="com.example.abntvpassio945fm.ui.ContactUs.ContactUsFragment"
+        android:label="Contact Us"
+        tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/feedBackFragment"
+        android:name="com.example.abntvpassio945fm.ui.FeedBack.FeedBackFragment"
+        android:label="Feeedback"
+        tools:layout="@layout/fragment_feed_back" />
+    <fragment
+        android:id="@+id/programScheduleFragment"
+        android:name="com.example.abntvpassio945fm.ui.ProgramSchedule.ProgramScheduleFragment"
+        android:label="Program Schedule"
+        tools:layout="@layout/fragment_program_schedule" />
+    <fragment
+        android:id="@+id/rateUsFragment"
+        android:name="com.example.abntvpassio945fm.ui.RateUs.RateUsFragment"
+        android:label="Rate Us"
+        tools:layout="@layout/fragment_rate_us" />
+    <fragment
+        android:id="@+id/sendYourReportsFragment"
+        android:name="com.example.abntvpassio945fm.ui.SendYourReports.SendYourReportsFragment"
+        android:label="Send Your Reports"
+        tools:layout="@layout/fragment_send_your_reports" />
 </navigation>

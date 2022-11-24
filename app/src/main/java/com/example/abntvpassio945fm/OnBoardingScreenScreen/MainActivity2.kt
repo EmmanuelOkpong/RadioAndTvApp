@@ -1,4 +1,4 @@
-package com.example.abntvpassio945fm
+package com.example.abntvpassio945fm.OnBoardingScreenScreen
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,13 +7,15 @@ import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
-import android.widget.LinearLayout.LayoutParams
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
+import com.example.abntvpassio945fm.HomeScreen
+import com.example.abntvpassio945fm.OnboardingItemsAdapter
+import com.example.abntvpassio945fm.R
 
 class MainActivity2 : AppCompatActivity() {
-    private lateinit var onboardingItemsAdapter:OnboardingItemsAdapter
+    private lateinit var onboardingItemsAdapter: OnboardingItemsAdapter
     private lateinit var indicatorsContainers:LinearLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,10 +26,10 @@ class MainActivity2 : AppCompatActivity() {
     }
 
     private fun setOnBoarding(){
-        onboardingItemsAdapter=OnboardingItemsAdapter(
+        onboardingItemsAdapter= OnboardingItemsAdapter(
             listOf(
                 OnboardingItem(
-                    onboardingIamge =R.drawable.passionfm,
+                    onboardingIamge = R.drawable.passionfm,
                     onboardingText = "Passion 94.5 Fm is a Premium Talk, Urban News, \n& Sports Radio Station, in Uyo, Nigeria."
                 ),
                 OnboardingItem(
@@ -58,7 +60,7 @@ class MainActivity2 : AppCompatActivity() {
         }
 }
 private fun setUpIndicators(){
-    indicatorsContainers=findViewById(R.id.indicatorsContainer )
+    indicatorsContainers=findViewById(R.id.indicatorsContainer)
     val indicators= arrayOfNulls<ImageView>(onboardingItemsAdapter.itemCount)
     val layoutParams: LinearLayout.LayoutParams = LinearLayout.LayoutParams(WRAP_CONTENT,WRAP_CONTENT)
     layoutParams.setMargins(8,0,8,0)
@@ -76,7 +78,7 @@ private fun setUpIndicators(){
 
 }
 private  fun navigateToHomeActivity(){
-    startActivity(Intent(applicationContext,HomeScreen::class.java))
+    startActivity(Intent(applicationContext, HomeScreen::class.java))
     finish()
 }
     private fun setCurrentIndicator(position:Int){
@@ -95,7 +97,7 @@ private  fun navigateToHomeActivity(){
                 imageView.setImageDrawable(
                     ContextCompat.getDrawable(
                     applicationContext,
-                    R.drawable.indicator_inactive_background
+                        R.drawable.indicator_inactive_background
                     )
                 )
             }

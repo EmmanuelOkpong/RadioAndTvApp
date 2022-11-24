@@ -2,8 +2,34 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/notifyMe"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="Notify Me"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/selectTheme"
+        android:orderInCategory="100"
+        android:title="Select Theme"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/aboutUsFragment"
+        android:orderInCategory="100"
+        android:title="About Us"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/contactUs"
+        android:orderInCategory="100"
+        android:title="Contact Us"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/rateUsFragment"
+        android:orderInCategory="100"
+        android:title="Rate Us"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/feedBackFragment"
+        android:orderInCategory="100"
+        android:title="Write Feed BAck"
         app:showAsAction="never" />
 </menu>
